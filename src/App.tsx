@@ -21,7 +21,6 @@ function App() {
       Intl.DateTimeFormat().resolvedOptions().timeZone
     )
       .then((weatherData: WeatherData) => {
-        console.log(weatherData);
         setWeatherData(weatherData);
         setSelectedDay(DAY_Formatter.format(weatherData.current.timestamp));
       })
